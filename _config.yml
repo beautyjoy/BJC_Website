@@ -54,18 +54,20 @@ social:
         - https://instagram.com/cspbjc
 google_site_verification: KuWL2ZXn4a2LNuAH4B-ghSObfCQ3tI6yXiSIRo6f05k"
 
+sass:
+  sass_dir: _sass/
+  style: compact
+
 # These are specifically whitelisted by Github
 plugins:
-  - jekyll-redirect-from
-  - jekyll-feed
-  - jekyll-seo-tag
+  - glim-sass-converter
+  # - jekyll-redirect-from
+  - glim-feed
+  - glim-seo-tag
 
-# Build settings
-markdown: kramdown
 include:
   - .htaccess
 exclude:
-  - redirects.json
   - Gemfile
   - Gemfile.lock
   - README.md

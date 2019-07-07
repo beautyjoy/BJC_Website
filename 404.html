@@ -6,9 +6,10 @@ subtitle: Uh, oh!<br>The link you're looking for no longer exists.
 call_to_action: 'Contact Us'
 call_to_action_link: 'mailto:contact@bjc.berkeley.edu'
 ---
+
 <script>
   function checkArchive() {
-    if (!$) {return; }
+    if (!$) { return; }
     if (location.pathname.indexOf('/archive') == 0) {
       // Just so things don't look ugly.
       $('.js-archivePath').attr('href', location.href).text(location.href)
@@ -32,7 +33,6 @@ call_to_action_link: 'mailto:contact@bjc.berkeley.edu'
 </script>
 <!--
   TODO:
-
   * try to redirect to a different URL
   * Show the URL they tried to access
 -->
@@ -40,5 +40,5 @@ call_to_action_link: 'mailto:contact@bjc.berkeley.edu'
 <div class="js-redirectNotice"></div>
 <h4>We've recently moved some files around. Try checking: <a class="js-archivePath"></a>.</h4>
 {% endcapture %}
-{% include section.html %}
 
+{% include section.html %}

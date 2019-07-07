@@ -3,7 +3,9 @@ layout: page
 title: News
 ---
 {% capture section_content %}
-<a href="{{ site.baseurl }}/announcements" class="unstyled-link"><h3>Announcements</h3></a>
+<a href="{{ site.baseurl }}/announcements" class="unstyled-link">
+    <h3>Announcements</h3>
+</a>
 
 <ul class="list-unstyled articles-list">
     {% for post in site.posts limit: 5 %}
@@ -19,7 +21,9 @@ title: News
 {% include section.html %}
 
 {% capture section_content %}
-<a href="{{ site.baseurl }}/research" class="unstyled-link"><h3>Research</h3></a>
+<a href="{{ site.baseurl }}/research" class="unstyled-link">
+    <h3>Research</h3>
+</a>
 
 <ul class="list-unstyled articles-list">
     {% for article in site.data.publications limit:5 %}
@@ -28,8 +32,8 @@ title: News
         <h6 class="article-subheading">
             {{ article.authors }}. ({{ article.year }}).
             {% if article.external_link %}<a href="{{ article.external_link }}" target="_blank">{% endif %}
-            {{ article.journal }}.
-            {% if article.external_link %}</a>{% endif %}
+                {{ article.journal }}.
+                {% if article.external_link %}</a>{% endif %}
         </h6>
     </li>
     {% endfor %}
@@ -40,7 +44,9 @@ title: News
 {% include section.html %}
 
 {% capture section_content %}
-<a href="{{ site.baseurl }}/press" class="unstyled-link"><h3>In the Press</h3></a>
+<a href="{{ site.baseurl }}/press" class="unstyled-link">
+    <h3>In the Press</h3>
+</a>
 
 <ul class="list-unstyled articles-list">
     {% for article in site.data.press-articles limit:5 %}

@@ -28,10 +28,7 @@ gem 's3_website'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-github-metadata", "~> 1.0"
-  gem "jekyll-redirect-from"
-  gem "jekyll-feed"
-  gem "jekyll-sitemap"
-  gem "jekyll-seo-tag"
+  # gem "jekyll-redirect-from"
 end
 
 # Added at 2017-12-21 23:15:23 -0800 by Michael:

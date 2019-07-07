@@ -1,7 +1,9 @@
 ---
+permalink: /assets/css/styles.css
 ---
 
 // Color scheme: https://color.adobe.com/Collioure-late-evening-color-theme-8618292/
+
 $primary-color: #18568C;
 $dark-color: #0C3559;
 $accent-color: #F2E205;
@@ -18,11 +20,11 @@ $body-margin-top: 56px; // nav bar height
 // TODO:
 // Define $font-size variables.
 
-@import 'mixins';
+@import '_sass/mixins';
 
 {% if site.url != site.production_url and site.url != 'http://localhost:4000' %}
 // Note that this might overwrite $body-margin-top
-@import 'warning_nav';
+@import '_sass/warning_nav';
 {% endif %}
 
 body {
